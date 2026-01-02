@@ -80,7 +80,7 @@
 
 |Week|Objective|Courses|Deliverables|Status|
 |----|---------|-------|------------|------|
-|1|ML Foundations + Python Refresher| * Andrew Ng - Machine Learning Specialization Course 1, Week 1 & 2 <br> * Kaggle: Python micro-course | * Load a small GEO dataset <br> * Build RandomForest baseline | TODO |
+|1|ML Foundations + Python Refresher|* Andrew Ng - Machine Learning Specialization Course 1, Week 1 & 2 <br> * Kaggle: Python micro-course |  [./W1/w1_1_random_forest_classifier.ipynb](W1/w1_1_random_forest_classifier.ipynb) <br> * Load a small GEO dataset <br> * Build RandomForest baseline | Done |
 |2|Classical ML & Model Evaluation | * Andrew Ng ML Specilization Course 1, Week 3 & 4 (bias/variance, regularization) <br> * scikit-learn Official Turorials(classification + evaluation) | Train Logistic Regression, RandomForest, XGBoost | TODO |
 |3|Deep Learning Basics (Neural Nets)| * DeepLearning.AI Course 1: Neural Networks & Deep Learning Week 1-3 <br> * PyTorch Official Tutorials: Tensors, Autograd, Basic Traing Loop | * Build a simple MPL in PyTorch <br> * Train on MNIST | TODO |
 |4|CNNs + Biological Sequence Basics| * DeepLearning.AI Deep Learning Specialization Course 4: Convolutional Neural Networks (Week 1-2) <br> * Optional: fastai chapter on CNN | * One-hot encoder DNA or protein <br> * Implement a small CNN <br> * Classify enhancer vs non-enhancer sequences | TODO |
