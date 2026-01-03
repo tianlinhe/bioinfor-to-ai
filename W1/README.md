@@ -52,4 +52,4 @@ I use git to track changes I made in this project including adding/editing/delet
 * [install-git](https://github.com/git-guides/install-git)
 * [git-basic-commends](https://github.com/git-guides#learning-git-basics): these should be sufficient for standalone project like this
 
-I strongly recommend having a `.gitignore` file at your project root like this: [.gitignore](../.gitignore). It tells git not to track files that are either too large (e.g. the gene expression data I downloaded) or files containing sensitive information, like your password
+I strongly recommend having a `.gitignore` file at your project root like this: [.gitignore](../.gitignore). It tells git not to track files that are either too large (e.g. the gene expression data I downloaded) or files containing sensitive information, such as your password.
