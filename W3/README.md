@@ -1,5 +1,5 @@
 # Neural Network and Deep Learning Notes
-URL: [Neural Network and Deep Learning]()
+URL: [Neural Network and Deep Learning](https://www.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0)
 ## W1: Introduction
 ### W1L02: What is a Neural Network
 A simplest neuron can be a Relu (rectified linear unit) as **activation function** with one input and output. A more complex neuron netwokrs can take more features as input.
