@@ -26,3 +26,20 @@ Scale drives deep learning progress:
 * Data (we have more data thanks to digitalization)
 * Computation (GPU)
 * Algorithms (eg.to speed up computation by using relu with faster gradient descent instead of sigmoid)
+
+## W2
+
+### W2L02-03 Logistic regression
+Recap of logistic regression: given parameters w and b, output of linear regression is: y = w ^ T x + b.
+Logistic regression takes a sigmal function of RHS so that LHS is between 0 and 1.
+The sigmal function (expressed in z) is sigma(z) = 1 / (1 + e ^ -z). It has this behaviour:
+
+* when z is larger: sigma(z) -> 1
+* when z is small: sigma(z) -> 0
+
+Cost function (for a single training sample) is NOT the minimum least square, because it is non-convex will make gradient descent difficult. We will use another cost function L = -(y * log(y_hat) + (1-y) * log(1-y_hat)), with the intuition being:
+
+* y = 1 -> L = -log(y_hat) -> To minimize L, y_hat needs to be large (close 1)
+* y = 0 -> L = -log(1-y_hat) -> To minimize L, y_hat needs to be small (close to 0)
+
+So the cost functions (for all training samples *m*) is the summation over L divided by m.
