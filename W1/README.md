@@ -30,8 +30,25 @@ deactivate
 After your environment is activated, you can install the packages used in this project by:
 
 ```
+# I only listed the essential packages
 pip install -r requirements.txt
 ```
+or if you use conda:
+```
+# 1. Create a clean environment
+conda create -n cat-ai python=3.10 -y
+conda activate cat-ai
+
+# 2. Install PyTorch (The core engine)
+# For CPU:
+conda install pytorch torchvision cpuonly -c pytorch
+# For NVIDIA GPU:
+# conda install pytorch torchvision pytorch-cuda=11.8 -c pytorch -c nvidia
+
+# 3. Install Data Science stack
+pip install matplotlib scikit-learn seaborn pandas ipykernel
+```
+
 
 ## Productivity
 
