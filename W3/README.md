@@ -72,5 +72,53 @@ for i = 1 to m: # first layer of for-loop over samples
 J = J / m # cost function is the mean of all samples
 dw_1 = dw1 / m
 ```
- 
+
+## W3
+
+### W3L01-02 Neural Network Overview
+
+* Each layer is a compuation of 1) z=wx+b 2) a=sigma(z);
+* Each layer uses the output of the previous layer a as x;
+* L(a, y) is computed as the final output of the NN.
+
+The number of nodes in each layer does NOT necessarily equal to number of features.
+
+### W3L02-03 An example of NN with two layers and one training sample 
+
+The example NN has 2 layers: input (not counted), hidden, and output layers.
+
+The input layer is also called a[0], in which a stands for activation. Therefore hidden layer is a[1][i], where i refers to the nth node.
+
+Suppose the NN has 3 features, its hidden layer 1 has 3 nodes
+
+* Dimension of z[1] = w[1] * x + b[1] = (4,3) * (3,1) + (4,1) = (4,1)
+* Dimension of a[1] = sigma(z[1]) = (4,1)
+
+Its output layer 2 has only one node as output:
+
+* Dimension of z[2] = w[2] * a[1] + b[2] = (1,4)*(4,1) + (1, 1) = (1,1)
+* Dimension of a[2] = (1, 1)
+
+### W3L06-07 Activation Functions
+|Activation Function|Formula|Pros|Cons|Usage|
+|-------------------|-------|----|----|-----|
+|Sigma|1/(1+e^-z)| |slope=0 at both ends, learning very slow|Almost never use besides the output layer of binary classification|
+|tanh(z)||Mean is 0, good for learning|Shifted sigma center at origin, span from -1 to 1|slope=0 at both ends, learning very slow|Superior than sigma|
+|Relu|max(0,z)| |Not differentiable at z=0|Most common|
+|Leaky Relu|Relu with a small slope when x<0| | |Sometimes worth trying|
+
+Note: We almost never use linear function as activation function because it is equivalent to blending the whole NN into one neuron. The rare occasional to use linear function is regression problem (e.g. prediction of house price).
+
+### W3L09-10 Gradient Descent
+Backward propagation computes derivatives (gradient) using chain rules, gradient descent uses the calculated gradient to take "steps" to minimize the loss function.
+
+### W3L11 Random Initialization
+
+For logistic regression, we initialize w with np.random.ranint * 0.01:
+
+* Gaussian distrubution
+* cannot all 0, otherwise symmetrical issue
+* multiply with a small number to avoid saturation at the ends of logistic regression (it doesn't matter if the activation function is NOT logistic regression)
+
+We can b with all zeros because b does not have symmetrical issue
 
