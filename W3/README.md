@@ -120,5 +120,5 @@ For logistic regression, we initialize w with np.random.ranint * 0.01:
 * cannot all 0, otherwise symmetrical issue
 * multiply with a small number to avoid saturation at the ends of logistic regression (it doesn't matter if the activation function is NOT logistic regression)
 
-We can b with all zeros because b does not have symmetrical issue
+We can initialize b with all zeros because b does not have symmetrical issue.
 
