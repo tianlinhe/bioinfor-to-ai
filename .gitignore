@@ -1,2 +1,4 @@
 **/*.gz
 W3/Pumpkin Dataset/
+W4/.genomic_benchmarks/
+W4/dna_subset_small/
