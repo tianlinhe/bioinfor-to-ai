@@ -80,19 +80,19 @@
 
 |Week|Objective|Courses|Deliverables|Status|
 |----|---------|-------|------------|------|
-|1|ML Foundations + Python Refresher|* Andrew Ng - Machine Learning Specialization Course 1, Week 1 & 2 <br> * Kaggle: Python micro-course |  [./W1/w1_1_random_forest_classifier.ipynb](W1/w1_1_random_forest_classifier.ipynb) <br> * Download gene expression dataset from NCBI <br> * Build RandomForest classifier of lung cancer | Done |
-|2|Classical ML & Model Evaluation | * Andrew Ng ML Specilization Course 1, Week 3 & 4 (bias/variance, regularization) <br> * scikit-learn Official Turorials(classification + evaluation) | [./W2/w2_1_xgb.ipynb](./W2/w2_1_xgb.ipynb) <br> * Build XGBoost <br> * ML model evaluation: Confusion Matrix, top features, SHAP | Done |
-|3|Deep Learning Basics (Neural Nets)| * DeepLearning.AI Course 1: Neural Networks & Deep Learning Week 1-3 <br> * PyTorch Official Tutorials: Tensors, Autograd, Basic Traing Loop | [./W3/w3_1_nn.ipynb](./W3/w3_1_nn.ipynb)<br>* Build a mouse detector using Neural Network with PyTorch <br> * Train on Pumpkin Dataset | Done |
-|4|CNNs + Biological Sequence Basics| * DeepLearning.AI Deep Learning Specialization Course 4: Convolutional Neural Networks (Week 1-2) <br> * Optional: fastai chapter on CNN | [./W4/w4_1_cnn_enhancer_classifier.ipynb](./W4/w4_1_cnn_enhancer_classifier.ipynb) <br>* Implement a small CNN <br>* Classify enhancer vs non-enhancer sequences<br>* One-hot encoder DNA | Done |
+|1|ML Foundations + Python Refresher|* Andrew Ng - Machine Learning Specialization Course 1, Week 1 & 2 <br> * Kaggle: Python micro-course |Notebook: [./W1/w1_1_random_forest_classifier.ipynb](W1/w1_1_random_forest_classifier.ipynb) <br> * Download gene expression dataset from NCBI <br> * Build RandomForest classifier of lung cancer | Done |
+|2|Classical ML & Model Evaluation | * Andrew Ng ML Specilization Course 1, Week 3 & 4 (bias/variance, regularization) <br> * scikit-learn Official Turorials(classification + evaluation) |Notebook: [./W2/w2_1_xgb.ipynb](./W2/w2_1_xgb.ipynb) <br> * Build XGBoost <br> * ML model evaluation: Confusion Matrix, top features, SHAP | Done |
+|3|Deep Learning Basics (Neural Nets)| * DeepLearning.AI Course 1: Neural Networks & Deep Learning Week 1-3 <br> * PyTorch Official Tutorials: Tensors, Autograd, Basic Traing Loop |Notebook: [./W3/w3_1_nn.ipynb](./W3/w3_1_nn.ipynb)<br>* Build a mouse detector using Neural Network with PyTorch <br> * Train on Pumpkin Dataset | Done |
+|4|CNNs + Biological Sequence Basics| * DeepLearning.AI Deep Learning Specialization Course 4: Convolutional Neural Networks (Week 1-2) <br> * Optional: fastai chapter on CNN |Notebook: [./W4/w4_1_cnn_enhancer_classifier.ipynb](./W4/w4_1_cnn_enhancer_classifier.ipynb) <br>* Implement a small CNN <br>* Classify enhancer vs non-enhancer sequences<br>* One-hot encoder DNA | Done |
 
-### MONTH 2 (Weeks 5-8): Deep Learning + Transformers for Biology
+### MONTH 2 (Weeks 5-8): Protein Language Model & Transformers
 **Goal**: Acquire DL & transformer skilld needed for protein ML projects.
 |Week|Objective|Courses|Deliverables|Status|
 |----|---------|-------|------------|------|
-|5|PyTouch Deep Dive + Dataloaders| * PyTouch Fundamentals (free course by DeepLearning.AI) <br> * fast.ai Chapters 1-2 (optional but excellent) | * Implement Dataloaders, Barch training and Early stopping <br> * Build your own neural network class in PyTorch | TODO |
-|6| Biological Sequence ML + ESM Embedding Extraction | * HuggingFace Tutorials: Tokenization and Fine-tuning for classification <br> * Reading: ESM1b / EMS2 papers summary | * Install ESM2 <br> Extract embeddings for ~1000 UniProt sequences <br> Save embeddings (.pt or .npy) | TODO |
-|7| Transformer Basics | * HuggingFace Course Chapters 1-7 (especially attention mechanism) <br> * DeepLearning.AI NLP Specialization (only the transformer-intro part) | * Fine-tune a BERT sentiment classifier (simple NLP) <br> * Understand training loop differences | TODO |
-|8| Prep for Project 1 | * No courses required, more hands-on <br> * Skim paper: ProteinBERT, ProtTrans | * Download UniProtPfam dataset <br> * Clean data <br> * Split train/valid/test <br> * Setup project GitHub repo + folder structure | TODO |
+|5|Protein Feature Engineering & ESM-2 Basics| • ESM GitHub (Meta AI)<br>• Intro to Amino Acid chemical properties (hydrophobicity, charge) | Notebook: "Protein Representation 101"<br>• Compare One-Hot encoding vs. extracting "Pre-trained Embeddings" using the ESM-2 model (esm2_t6_8M_UR50D). | TODO |
+|6| Latent Space & Clustering | • HuggingFace: Protein Language Models<br>• Scikit-Learn: t-SNE and UMAP documentation | Notebook: "Visualizing the Protein Latent Space"<br>• Extract embeddings for ~1000 sequences and use t-SNE/UMAP to visualize functional clustering (e.g., Enzymes vs. Membrane proteins). | TODO |
+|7| Transformer Basics & Attention | • The Illustrated Transformer (Jay Alammar)<br>• HuggingFace Course: Attention Mechanism |Notebook: "Attention is All You Need (for DNA)<br>• "Build a simple 1-layer Multi-Head Attention block and apply it to your Enhancer dataset to compare performance against the CNN. | TODO |
+|8| Project 1: Protein Function Predictor | • Reading: ProteinBERT / ProtTrans<br>• Dataset: DeepLoc or UniProt Subcellular Localization |Notebook: "Project 1 - Subcellular Localization Classifier"<br>• A complete pipeline: Sequence → ESM-2 Embedding → MLP Classifier to predict if a protein is Nuclear, Cytoplasmic, or Mitochondrial.| TODO |
 
 
 ### MONTH 3 (Weeks 9-12): PROJECT 1 Protein Function Prediction (ESM Embeddings)
